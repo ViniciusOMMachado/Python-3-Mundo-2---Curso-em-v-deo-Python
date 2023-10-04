@@ -1,0 +1,19 @@
+r1 = float(input("Primeiro segmento de reta: \n"))
+r2 = float(input("Segundo segmento de reta: \n"))
+r3 = float(input("Terceiro segmento de reta: \n"))
+
+if r1 + r2 > r3 and r1 + r3 > r2 and r2 + r3 > r1:
+    print("Pode formar um triângulo ", end='')
+    if r1 == r2 == r3:
+        print('Equilátero!')
+    elif r1 != r2 != r3 != r1:
+           print('Escaleno!')
+    else:
+        print('Esósceles!')
+else:
+    print("O triângulo não pode existir.")
+
+
+    #equilátero = todos os lados iguais
+    #Isósceles = dois lados iguais
+    #Escaleno = todos os lados diferentes
