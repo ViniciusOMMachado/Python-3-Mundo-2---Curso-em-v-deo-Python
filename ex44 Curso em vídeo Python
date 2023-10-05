@@ -6,7 +6,7 @@ considerando o seu preço normal e condição de pagamento:
 – à vista no cartão: 5% de desconto
 – em até 2x no cartão: preço formal
 – 3x ou mais no cartão: 20% de juros'''
-print('{:=^40}'.format(' Lojinha do Vinícius '))
+print('{:=^40}'.format(' Formas de pagamento com  Vinícius '))
 preco = float(input('Preço das compras: R$ '))
 print('''Formas de Pagamentos'
 '[1] - Á vista dinheiro/cheque: 10% de desconto'
