@@ -1,0 +1,22 @@
+'''Exercício Python 54: Crie um programa que leia o ano de nascimento de sete pessoas.
+No final,mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.'''
+
+from datetime import date
+atual = date.today().year
+totalmaior = 0
+totalmenor = 0
+for pess in range(1, 8):
+    nascimento = int(input('Em que ano a {}ª pessoa nasceu? '.format(pess)))
+    idade = atual - nascimento
+    #print('A pessoa tem {} anos'.format(idade)) #Mostra a idade que se tem !
+    if idade >= 18:
+        totalmenor += 1
+    else:
+        totalmaior += 1
+print('Ao todo tivessos {} pessoas maiores de idade'.format(totalmaior))
+print('E {} pessoas MENORES de idade'.format(totalmenor))
+
+Outra forma de executar, substituindo o código da linha 12 ate o 17  e liberando a linha 11 para mostrar a idade de cada pessoa.
+'''print('VocÊ é MAIOR de idade')
+    else:
+        print('Você é MENOR de idade')'''
