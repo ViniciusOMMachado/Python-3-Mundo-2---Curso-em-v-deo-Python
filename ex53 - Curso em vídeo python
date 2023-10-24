@@ -1,0 +1,22 @@
+'''Exercício Python 53:
+Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo,
+desconsiderando os espaços. Exemplos de palíndromos: São palavras lidas e escritas de tras para frente: ANA, APOS A SOPA, A SACADA DA CASA'''
+
+'''frase = str(input('Digite uma frase: ')).strip().upper()
+palavras = frase.split() # separa as palavras 
+print('Você digitou a frase {}'.format(palavras)) # separa as palavras e partes'''
+'''junto = ''.join(palavras) #Junta a palavras sem espaços
+print('Você digitou a frase {}'.format(junto))''' #junta as palavras sem espaço
+
+
+frase = str(input('Digite uma frase: ')).strip().upper() # digita a palavra
+palavras = frase.split() # separa em uma lista
+junto = ''.join(palavras) # juntou retirando os espaços
+inverso = ''
+'''inverso = junto[::-1] # outra forma de usar, mais simples e com a mesma função!'''
+for letra in range(len(junto) - 1, -1, -1 ): # FOI DA ULTIMA LETRA ATE A PRIMERA VOLTADO UMA LETRA
+    inverso += junto[letra]
+if inverso == junto:
+    print('A frase {} seu inverso {} é um palíndromo'.format(junto, inverso))
+else:
+    print('Não é palindromo')
